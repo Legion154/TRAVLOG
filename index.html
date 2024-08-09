@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travlog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: "150px",
+          },
+          fontFamily: {
+            open: ["Open Sans"],
+          },
+          extend: {
+            colors: {
+              t_pink: "#F85E9F",
+              t_black: "#222831",
+              t_purple: "#5D50C6",
+              t_yellow: "#FF5722",
+              t_orange: "#FACD49",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header
+      class="font-open container py-7 flex flex-row items-center justify-between"
+    >
+      <div>
+        <img src="./images/travlog.logo.svg" alt="logo" />
+      </div>
+      <ul class="flex flex-row items-center gap-10 font-medium">
+        <li class="text-black hover:text-opacity-[50%] hover:cursor-pointer">
+          Home
+        </li>
+        <li class="text-black hover:text-opacity-[50%] hover:cursor-pointer">
+          Discover
+        </li>
+        <li class="text-black hover:text-opacity-[50%] hover:cursor-pointer">
+          Special Deals
+        </li>
+        <li class="text-black hover:text-opacity-[50%] hover:cursor-pointer">
+          Contact
+        </li>
+      </ul>
+      <div class="flex flex-row items-center gap-7">
+        <span class="font-medium">Log in</span>
+        <button class="px-5 py-2 rounded-3xl text-white bg-[#5D50C6]">
+          Sign Up
+        </button>
+      </div>
+    </header>
+
+    <main class="container font-open">
+      <section class="flex flex-row justify-between items-center relative">
+        <div class="py-10 flex flex-col items-start">
+          <div class="flex flex-row items-center gap-5">
+            <span class="font-bold text-sm text-[#F85E9F]"
+              >Explore the world!</span
+            >
+            <i class="text-xl fa-solid fa-suitcase" style="color: #f85e9f"></i>
+          </div>
+          <h1 class="mt-[40px] leading-[75px] font-bold text-6xl w-[370px]">
+            Travel <span class="text-[#F85E9F]">top destination</span> of the
+            world
+          </h1>
+          <pre class="mt-[35px] font-open leading-6 opacity-80">
+We always make our customer happy by
+providing
+as many choices as possible
+          </pre>
+          <div class="flex flow-row items-center gap-10 mt-[25px]">
+            <button class="px-5 py-2 rounded-3xl text-white bg-[#5D50C6]">
+              Get Started
+            </button>
+            <div class="flex flex-row items-center gap-3">
+              <i
+                class="text-2xl fa-solid fa-circle-play"
+                style="color: #5d50c6"
+              ></i>
+              <span class="font-bold text-sm">Watch Demo</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center mt-20">
+          <img
+            class="absolute z-[-1]"
+            src="./images/hero.img.part1.png"
+            alt=""
+          />
+          <img class="mt-28" src="./images/hero.img.part2.png" alt="" />
+        </div>
+
+        <div class="text-6xl absolute z-10 bottom-80 right-[560px]">
+          <i class="fa-brands fa-telegram" style="color: #f85e9f"></i>
+        </div>
+        <div
+          class="bg-orange-500 rounded-full w-14 h-14 flex justify-center items-center absolute z-10 right-44 bottom-4"
+        >
+          <i class="text-xl text-white fa-solid fa-user-plus"></i>
+        </div>
+        <div
+          class="bg-white rounded-3xl px-6 py-3 absolute z-10 -right-20 bottom-40"
+        >
+          <div class="flex flex-row items-center justify-center gap-3">
+            <i
+              class="text-xl fa-solid fa-location-dot"
+              style="color: #facd49"
+            ></i>
+            <p class="text-sm font-bold">Top Places</p>
+          </div>
+        </div>
+      </section>
+
+      <img class="relative z-10 -left-32" src="./images/OBJECTS.png" alt="" />
+
+      <!-- STAMPS -->
+
+      <section class="flex flex-row items-center justify-between">
+        <img src="./images/stamp1.svg" alt="stamp1" />
+        <img src="./images/stamp2.svg" alt="stamp2" />
+        <img src="./images/stamp3.svg" alt="stamp3" />
+        <img src="./images/stamp4.svg" alt="stamp4" />
+        <img src="./images/stamp5.svg" alt="stamp5" />
+      </section>
+
+      <!-- SERVICE -->
+
+      <section class="mt-24 py-10 flex flex-row items-center justify-between">
+        <div class="flex flex-col items-start gap-2">
+          <span class="text-2xl text-[#f85e9f] font-medium tracking-[2px]"
+            >Services</span
+          >
+          <h1 class="text-4xl font-bold leading-10 w-[400px]">
+            Our top value categories for you
+          </h1>
+        </div>
+        <div class="flex flex-row items-center gap-14">
+          <div
+            class="px-10 py-16 rounded-2xl flex flex-col items-center justify-center gap-14 border-2 hover:cursor-pointer hover:shadow-[0px_41px_89px_0px_rgba(0,0,0,0.1)]"
+          >
+            <img src="./images/tour.svg" alt="" />
+            <div class="flex flex-col items-center justify-center gap-6">
+              <h1 class="text-lg font-bold">Best Tour Guide</h1>
+              <p class="w-[200px] text-center opacity-60">
+                What looked like a small patch of purple grass, above five feet.
+              </p>
+            </div>
+          </div>
+          <div
+            class="px-10 py-16 rounded-2xl flex flex-col items-center justify-center gap-14 border-2 hover:cursor-pointer hover:shadow-[0px_41px_89px_0px_rgba(0,0,0,0.1)]"
+          >
+            <img src="./images/booking.svg" alt="" />
+            <div class="flex flex-col items-center justify-center gap-6">
+              <h1 class="text-lg font-bold">Easy Booking</h1>
+              <p class="w-[200px] text-center opacity-60">
+                Square, was moving across the sand in their direction.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPLORE -->
+
+      <section class="mt-24 flex flex-col gap-14">
+        <div class="flex flex-row items-center justify-between">
+          <div class="flex flex-col items-start gap-2">
+            <span class="text-lg text-[#f85e9f] font-bold tracking-[2px]"
+              >TOP DESTINATION</span
+            >
+            <h1 class="text-4xl font-bold">Explore top destination</h1>
+          </div>
+          <div class="flex flex-row items-center gap-7">
+            <div
+              class="flex items-center justify-center px-6 py-6 rounded-full border-2 hover:bg-t_purple hover:text-white duration-300"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div
+              class="flex items-center justify-center px-6 py-6 rounded-full border-2 hover:bg-t_purple hover:text-white duration-300"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row items-start justify-between">
+          <div
+            class="flex flex-col rounded-3xl shadow-[0px_173px_288px_0px_rgba(0,0,0,0.2)]"
+          >
+            <img src="./images/beach.png" alt="" />
+            <div class="px-7 py-7">
+              <div class="flex flow-row items-start justify-between">
+                <h1 class="font-bold text-lg w-40">
+                  Paradise Beach, Bantayan Island
+                </h1>
+                <p class="font-bold text-lg text-[#F85E9F]">$550.16</p>
+              </div>
+              <div class="flex flex-col gap-6 mt-3">
+                <span>Rome, Italy</span>
+                <div class="flex flow-row items-center gap-2">
+                  <span class="text-t_yellow font-bold">4.8</span>
+                  <i class="text-t_yellow fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col rounded-3xl shadow-[0px_173px_288px_0px_rgba(0,0,0,0.2)]"
+          >
+            <img src="./images/ocean.png" alt="" />
+            <div class="px-7 py-7">
+              <div class="flex flow-row items-start justify-between">
+                <h1 class="font-bold text-lg w-40">
+                  Ocean with full of Colors
+                </h1>
+                <p class="font-bold text-lg text-[#F85E9F]">$20.99</p>
+              </div>
+              <div class="flex flex-col gap-6 mt-3">
+                <span>Maldives</span>
+                <div class="flex flow-row items-center gap-2">
+                  <span class="text-t_yellow font-bold">4.5</span>
+                  <i class="text-t_yellow fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col rounded-3xl shadow-[0px_173px_288px_0px_rgba(0,0,0,0.2)]"
+          >
+            <img src="./images/mauntain.png" alt="" />
+            <div class="px-7 py-7">
+              <div class="flex flow-row items-start justify-between">
+                <h1 class="font-bold text-lg w-40">
+                  Mountain View, Above the cloud
+                </h1>
+                <p class="font-bold text-lg text-[#F85E9F]">$150.99</p>
+              </div>
+              <div class="flex flex-col gap-6 mt-3">
+                <span>United Arab Emeries</span>
+                <div class="flex flow-row items-center gap-2">
+                  <span class="text-t_yellow font-bold">5.0</span>
+                  <i class="text-t_yellow fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DREAM LOCATION -->
+
+      <section
+        class="mt-36 relative flex flex-row justify-between items-center"
+      >
+        <div class="flex flex-row items-start">
+          <img
+            class="absolute top-0 -left-40"
+            src="./images/dream.location.png"
+            alt=""
+          />
+          <img
+            class="absolute -right-20 top-48 w-[200px]"
+            src="./images/crop.svg"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col items-center justify-end gap-[64px]">
+          <div class="flex flex-col items-center justify-end">
+            <span class="text-lg text-[#f85e9f] font-bold tracking-[2px]"
+              >TRAVEL POINT</span
+            >
+            <h1 class="mt-4 text-4xl font-bold leading-[42px] w-[400px]">
+              We helping you find your dream location
+            </h1>
+            <p class="mt-8 opacity-60 leading-7 w-[380px]">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC.
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-10">
+            <div class="flex flex-row items-center gap-10">
+              <div
+                class="w-[170px] h-[130px] flex flex-col gap-2 border-2 rounded-3xl items-center justify-center"
+              >
+                <span class="font-bold text-[rgba(255,87,34,1)] text-2xl"
+                  >500+</span
+                >
+                <p class="font-medium">Holiday Package</p>
+              </div>
+              <div
+                class="w-[170px] h-[130px] flex flex-col gap-2 border-2 rounded-3xl items-center justify-center"
+              >
+                <span class="font-bold text-[rgba(255,87,34,1)] text-2xl"
+                  >100</span
+                >
+                <p class="font-medium">Luxury Hotel</p>
+              </div>
+            </div>
+            <div class="flex flex-row items-center gap-10">
+              <div
+                class="w-[170px] h-[130px] flex flex-col gap-2 border-2 rounded-3xl items-center justify-center"
+              >
+                <span class="font-bold text-[rgba(255,87,34,1)] text-2xl"
+                  >7</span
+                >
+                <p class="font-medium">Premium Airlines</p>
+              </div>
+              <div
+                class="w-[170px] h-[130px] flex flex-col gap-2 border-2 rounded-3xl items-center justify-center"
+              >
+                <span class="font-bold text-[rgba(255,87,34,1)] text-2xl"
+                  >2k+</span
+                >
+                <p class="font-medium">Happy Customer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+
+      <section class="mt-60 relative flex flex-row justify-between items-start">
+        <div class="flex flex-col items-center justify-end gap-[64px]">
+          <div class="flex flex-col items-start justify-end">
+            <span class="text-lg text-[#f85e9f] font-bold tracking-[3px]"
+              >KEY FEATURES</span
+            >
+            <h1 class="mt-4 text-4xl font-bold leading-[42px] w-[400px]">
+              We offer best services
+            </h1>
+            <p class="mt-8 opacity-60 leading-7 w-[380px]">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC.
+            </p>
+          </div>
+          <div class="flex flex-col items-start gap-2">
+            <div
+              class="flex flex-row items-center px-8 py-6 rounded-3xl gap-7 border-2 border-white hover:border-2 hover:border-[#e5e7eb] hover:cursor-pointer duration-300"
+            >
+              <div
+                class="flex items-center justify-center px-7 py-6 rounded-3xl text-3xl text-white bg-t_yellow"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="flex flex-col items-start gap-1">
+                <h1 class="font-bold text-lg">We offer best services</h1>
+                <p class="opacity-[60%]">
+                  Lorem Ipsum is not simply random text
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-center px-8 py-6 pr-20 rounded-3xl gap-7 border-2 border-white hover:border-2 hover:border-[#e5e7eb] hover:cursor-pointer duration-300"
+            >
+              <div
+                class="flex items-center justify-center px-7 py-6 rounded-3xl text-3xl text-white bg-t_orange"
+              >
+                <i class="fa-solid fa-calendar"></i>
+              </div>
+              <div class="flex flex-col items-start gap-1">
+                <h1 class="font-bold text-lg">Schedule your trip</h1>
+                <p class="opacity-[60%]">
+                  It has roots in a piece of classical
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row items-center px-8 py-6 rounded-3xl gap-7 border-2 border-white hover:border-2 hover:border-[#e5e7eb] hover:cursor-pointer duration-300"
+            >
+              <div
+                class="flex items-center justify-center px-6 py-6 rounded-3xl text-3xl text-white bg-t_pink"
+              >
+                <i class="fa-solid fa-ticket"></i>
+              </div>
+              <div class="flex flex-col items-start gap-1">
+                <h1 class="font-bold text-lg">Get discounted coupons</h1>
+                <p class="opacity-[60%]">
+                  Lorem Ipsum is not simply random text
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row items-start">
+          <img src="./images/features.png" alt="" />
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+
+      <section class="relative mt-36 flex flex-col items-center justify-center">
+        <div
+          class="flex flex-col items-center justify-center text-center gap-2"
+        >
+          <span class="text-lg text-[#f85e9f] font-bold tracking-[3px]"
+            >TESTIMONIALS</span
+          >
+          <h1 class="text-4xl font-bold leading-[42px] w-[400px]">
+            Trust our clients
+          </h1>
+        </div>
+        <div class="mt-16 flex flex-row items-center">
+          <div
+            class="flex items-center justify-center px-6 py-6 rounded-full border-2 bg-t_purple text-white hover:bg-white hover:text-black duration-300"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="flex flex-col items-center justify-center gap-10">
+            <img class="w-[128px] flex" src="./images/mark.smith.svg" alt="" />
+            <div class="flex flex-col items-center gap-6">
+              <div class="flex flex-row items-center gap-1">
+                <span class="font-bold text-lg text-t_yellow">Mark Smith</span
+                ><span class="font-bold text-lg">/ Travel Enthusiast</span>
+              </div>
+              <div
+                class="flex flex-row items-center gap-3 text-t_orange text-xl"
+              >
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-center opacity-[80%] w-[63%]">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC.
+            </p>
+            <div class="flex flex-row items-center justify-center gap-5">
+              <div
+                class="px-3 py-3 rounded-full bg-[#F85E9F] opacity-[15%]"
+              ></div>
+              <div class="px-3 py-3 rounded-full bg-[#F85E9F]"></div>
+              <div
+                class="px-3 py-3 rounded-full bg-[#F85E9F] opacity-[15%]"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-center px-6 py-6 rounded-full border-2 bg-t_purple text-white hover:bg-white hover:text-black duration-300"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <img class="absolute left-0 -bottom-64" src="./images/charset.png" alt="">
+      </section>
+
+      <!-- NEWS! -->
+
+      <section class="relative mt-56 flex flex-col items-center justify-center gap-20">
+        <div
+          class="flex flex-col items-center justify-center text-center gap-5"
+        >
+          <span
+            class="text-lg uppercase text-[#f85e9f] font-bold tracking-[3px]"
+            >subscribe to our newsletter</span
+          >
+          <h1 class="text-4xl font-bold leading-[42px] w-[70%]">
+            Prepare yourself & let’s explore the beauty of the world
+          </h1>
+        </div>
+        <div
+          class="flex flex-row items-center justify-between gap-[500px] px-6 py-3 rounded-xl bg-[#e5e7eb]"
+        >
+          <div class="flex flex-row items-center gap-3">
+            <i class="text-xl fa-solid fa-envelope"></i>
+            <p class="capitalize text-lg font-bold">your email</p>
+          </div>
+          <div
+            class="text-lg font-semibold rounded-2xl bg-t_purple text-white px-10 py-4"
+          >
+            <button type="reset">Subscripe</button>
+          </div>
+        </div>
+        <img class="absolute -right-[150px] -bottom-80" src="./images/OBJECTS2.png" alt="">
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="container py-14 mt-56 flex flex-row items-start justify-between bg-[#f7f7f7]">
+      <div class="flex flex-col items-start gap-8">
+        <img src="./images/travlog.logo.svg" alt="" />
+        <p class="text- opacity-[80%] w-[400px]">
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It
+          has roots in a piece of classical Latin literature from 45 BC.
+        </p>
+        <div class="flex flex-row items-center gap-7 text-3xl text-t_purple">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-square-twitter"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+        </div>
+      </div>
+      <ul class="flex flex-col items-start gap-4">
+        <li class="font-bold">Company</li>
+        <li>Contact</li>
+        <li>Meet Us</li>
+        <li>About</li>
+      </ul>
+      <ul class="flex flex-col items-start gap-4">
+        <li class="font-bold">Why Travlog?</li>
+        <li>+00 92 1234 56789</li>
+        <li>Career</li>
+        <li>Partner with us</li>
+        <li>info@travlog.com</li>
+      </ul>
+      <ul class="flex flex-col items-start gap-4">
+        <li class="font-bold">Mobile</li>
+        <li>FAQ’s</li>
+        <li>Blog</li>
+        <li>205. R Street, New York</li>
+        <li>BD23200</li>
+      </ul>
+    </footer>
+  </body>
+</html>
